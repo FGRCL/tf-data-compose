@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfdatacompose"
+version = "0.0.1"
+authors = [
+    { name="Francois LaBerge", email="FGRCLaBerge@gmail.com"}
+]
+description = "Create composable data transformation pipelines using Tensorflow Datasets"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FGRCL/tf-data-compose"
+"Bug Tracker" = "https://github.com/FGRCL/tf-data-compose"
