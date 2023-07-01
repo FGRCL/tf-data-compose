@@ -1,2 +1,2 @@
-# tf-data-compose
-Create composable data transformations using Tensorflow Datasets
+# TF Data Compose
+Create composable data transformation pipelines using Tensorflow Datasets
