@@ -1,0 +1,6 @@
+- define the input and output types better
+- replace .apply() with __call__()?
+- find a way to organize base operations
+- find a way to split and merge pipelines
+- implement all tensorflow.data operations
+- ?implement sci-kit learn transformations
