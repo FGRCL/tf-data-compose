@@ -4,7 +4,7 @@ from typing import Tuple, Union
 from tensorflow import DType, Tensor, py_function
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.base import DatasetOperation
+from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
 class PythonFunctionFlatMap(DatasetOperation):

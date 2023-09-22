@@ -2,7 +2,7 @@ from abc import abstractmethod
 
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.base import DatasetOperation
+from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
 class Filter(DatasetOperation):

@@ -4,7 +4,7 @@ from typing import Any
 from tensorflow import Tensor, numpy_function
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.base import DatasetOperation
+from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
 class NumpyFilter(DatasetOperation):

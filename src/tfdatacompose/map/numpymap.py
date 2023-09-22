@@ -4,7 +4,7 @@ from typing import Any, Tuple, Union
 from tensorflow import DType, Tensor, numpy_function
 from tensorflow.python.data import AUTOTUNE, Dataset
 
-from src.tfdatacompose.base import DatasetOperation
+from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
 class NumpyMap(DatasetOperation):
