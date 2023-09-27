@@ -6,8 +6,7 @@ build-backend = "pdm.backend"
 name = "tfdatacompose"
 version = "0.1.0"
 authors = [
-    { name="Francois LaBerge", email="FGRCLaBerge@gmail.com"},
-    {name = "François LaBerge", email = "fgrclaberge@gmail.com"},
+    { name = "François LaBerge", email = "fgrclaberge@gmail.com" },
 ]
 description = "Create composable data transformation pipelines using Tensorflow Datasets"
 readme = "README.md"
@@ -21,7 +20,7 @@ classifiers = [
 dependencies = [
     "tensorflow>=2.12.0",
 ]
-license = {text = "MIT"}
+license = { text = "MIT" }
 
 [project.urls]
 "Homepage" = "https://github.com/FGRCL/tf-data-compose"
@@ -40,4 +39,5 @@ dev = [
 test = [
     "pytest>=7.4.2",
     "numpy>=1.24.3",
+    "coverage>=7.3.1",
 ]
