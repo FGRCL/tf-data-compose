@@ -1,23 +1,43 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [project]
 name = "tfdatacompose"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
-    { name="Francois LaBerge", email="FGRCLaBerge@gmail.com"}
+    { name = "François LaBerge", email = "fgrclaberge@gmail.com" },
 ]
 description = "Create composable data transformation pipelines using Tensorflow Datasets"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.8,<3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Development Status :: 1 - Planning",
 ]
+dependencies = [
+    "tensorflow>=2.12.0",
+]
+license = { text = "MIT" }
 
 [project.urls]
 "Homepage" = "https://github.com/FGRCL/tf-data-compose"
 "Bug Tracker" = "https://github.com/FGRCL/tf-data-compose"
+
+[tool.pdm]
+[[tool.pdm.source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest",
+]
+test = [
+    "pytest>=7.4.2",
+    "numpy>=1.24.3",
+    "coverage>=7.3.1",
+]

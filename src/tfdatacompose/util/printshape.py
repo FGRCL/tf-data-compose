@@ -15,5 +15,6 @@ class PrintShape(Map):
             self.name = name
 
     def map(self, *args: Tensor) -> tuple[Tensor, ...]:
-        tensorflow.print(self.name, *(shape(a) for a in args))
+        shapes = (shape(a) for a in args)
+        tensorflow.print(f"PrintShape:{self.name}", *shapes)
         return args

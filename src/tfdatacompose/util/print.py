@@ -1,4 +1,4 @@
-from typing import Any, Tuple
+from typing import Tuple
 
 import tensorflow
 from tensorflow import Tensor
@@ -15,8 +15,7 @@ class Print(Map):
             Print.number += 1
         else:
             self.name = name
-        self.name = name
 
     def map(self, *args) -> Tuple[Tensor, ...]:
-        tensorflow.print(self.name, *args)
+        tensorflow.print(f"Print:{self.name}", *args)
         return args

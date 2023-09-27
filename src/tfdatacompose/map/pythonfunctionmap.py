@@ -2,7 +2,7 @@ from abc import abstractmethod
 from typing import Any, Tuple, Union
 
 from tensorflow import DType, Tensor, py_function
-from tensorflow.python.data import AUTOTUNE, Dataset
+from tensorflow.python.data import Dataset
 
 from src.tfdatacompose.datasetoperation import DatasetOperation
 
@@ -14,8 +14,6 @@ class PythonFunctionMap(DatasetOperation):
     def apply(self, dataset: Dataset) -> Dataset:
         return dataset.map(
             self.adapted_function,
-            num_parallel_calls=AUTOTUNE,
-            deterministic=False,
             name=self.__class__.__name__,
         )
 

@@ -1,8 +1,8 @@
 from abc import abstractmethod
-from typing import Any, Tuple
+from typing import Tuple
 
 from tensorflow import Tensor
-from tensorflow.python.data import AUTOTUNE, Dataset
+from tensorflow.python.data import Dataset
 
 from src.tfdatacompose.datasetoperation import DatasetOperation
 
@@ -11,8 +11,6 @@ class Map(DatasetOperation):
     def apply(self, dataset: Dataset) -> Dataset:
         return dataset.map(
             self.map,
-            num_parallel_calls=AUTOTUNE,
-            deterministic=False,
             name=self.__class__.__name__,
         )
 
