@@ -32,6 +32,3 @@ jobs:
           name: Coverage report
           path: htmlcov/
         if: ${{ always() }}
-  format:
-    runs-on: ubuntu-latest
-  lint:
