@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --user pdm
-          pdm install --global
+          pdm install --global --project .
       - name: Unit tests
         run: |
           coverage run -m pytest -r tests/
