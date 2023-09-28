@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --user pdm
+          pdm config --local python.use_venv False
           pdm install
       - name: Unit tests
         run: |
