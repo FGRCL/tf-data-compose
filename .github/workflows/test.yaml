@@ -1,4 +1,4 @@
-name: Test On Push
+name: Unit tests
 
 on: [ push ]
 
@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --user pdm
-          pdm install
+          pdm install --global --project .
       - name: Unit tests
         run: |
           coverage run -m pytest -r tests/
@@ -32,6 +32,3 @@ jobs:
           name: Coverage report
           path: htmlcov/
         if: ${{ always() }}
-  format:
-    runs-on: ubuntu-latest
-  lint:
