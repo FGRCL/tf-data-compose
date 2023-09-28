@@ -1,4 +1,4 @@
-name: Test On Push
+name: Unit tests
 
 on: [ push ]
 
@@ -21,8 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --user pdm
-          pdm config --local python.use_venv False
-          pdm install
+          pdm --global install
       - name: Unit tests
         run: |
           coverage run -m pytest -r tests/
