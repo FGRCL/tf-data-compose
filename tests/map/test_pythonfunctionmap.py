@@ -15,9 +15,8 @@ class Double(PythonFunctionMap):
 class TestPythonFunctionMap:
     def test_map(self):
         number_dataset = Dataset.from_tensor_slices(range(100))
-        map_double = Double(int32)
 
-        result = map_double(number_dataset)
+        result = Double(int32)(number_dataset)
 
         expected = list(arange(100) * 2)
         result = list(result.as_numpy_iterator())
