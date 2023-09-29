@@ -15,9 +15,8 @@ class Double(Map):
 class TestMap:
     def test_map(self):
         number_dataset = Dataset.from_tensor_slices(range(100))
-        map_double = Double()
 
-        result = map_double(number_dataset)
+        result = Double()(number_dataset)
 
         expected = list(arange(100) * 2)
         result = list(result.as_numpy_iterator())
