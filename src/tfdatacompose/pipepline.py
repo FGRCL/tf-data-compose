@@ -6,6 +6,15 @@ from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
 class Pipeline(DatasetOperation):
+    """
+    Composite of Dataset Operations.
+
+    Takes a list of Dataset Operations and executes them in order.
+    A pipeline is a dataset operation, therefore, it can be reused in other pipelines.
+
+    :param dataset_operations: a list of Dataset Operation
+    """
+
     def __init__(self, dataset_operations: List[DatasetOperation]):
         self.dataset_operations = dataset_operations
 

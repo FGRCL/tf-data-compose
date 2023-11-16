@@ -7,6 +7,17 @@ DatasetType = type(Dataset)
 
 
 class Skip(DatasetOperation):
+    """
+    Dataset skip operation.
+
+    Wraps the `Tensorflow Skip`_ operation on the dataset.
+    Skips a given `count` of elements from the dataset.
+
+    :param count: the number of elements to skip
+
+    .. _Tensorflow Skip: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#skip
+    """
+
     def __init__(self, count: int):
         self.count = count
 
