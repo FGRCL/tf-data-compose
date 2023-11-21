@@ -2,7 +2,7 @@ from typing import List
 
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.datasetoperation import DatasetOperation
+from tfdatacompose.datasetoperation import DatasetOperation
 
 
 class Pipeline(DatasetOperation):

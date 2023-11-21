@@ -3,7 +3,7 @@ from typing import Tuple
 import tensorflow
 from tensorflow import Tensor
 
-from src.tfdatacompose.map.map import Map
+from tfdatacompose.map.map import Map
 
 
 class Print(Map):

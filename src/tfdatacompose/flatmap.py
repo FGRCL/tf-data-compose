@@ -3,7 +3,7 @@ from abc import abstractmethod
 from tensorflow import Tensor
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.datasetoperation import DatasetOperation
+from tfdatacompose.datasetoperation import DatasetOperation
 
 
 class FlatMap(DatasetOperation):

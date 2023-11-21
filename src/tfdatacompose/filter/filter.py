@@ -2,7 +2,7 @@ from abc import abstractmethod
 
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.datasetoperation import DatasetOperation
+from tfdatacompose.datasetoperation import DatasetOperation
 
 
 class Filter(DatasetOperation):
@@ -12,7 +12,7 @@ class Filter(DatasetOperation):
     Wraps the `Tensorflow Filter`_ operation on the dataset.
     The filtering operation should be implemented in the ``filter`` method.
 
-    .. _Tensorflow Filter:https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
+    .. _Tensorflow Filter: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
     """
 
     def apply(self, dataset) -> Dataset:

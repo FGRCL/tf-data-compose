@@ -1,6 +1,6 @@
 from tensorflow.python.data import AUTOTUNE, Dataset
 
-from src.tfdatacompose.datasetoperation import DatasetOperation
+from tfdatacompose.datasetoperation import DatasetOperation
 
 
 class Batch(DatasetOperation):

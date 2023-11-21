@@ -1,7 +1,7 @@
 import tensorflow
 from tensorflow import Tensor, shape
 
-from src.tfdatacompose.map.map import Map
+from tfdatacompose.map.map import Map
 
 
 class PrintShape(Map):
