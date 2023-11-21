@@ -4,7 +4,7 @@ from numpy import ndarray
 from tensorflow import Tensor, numpy_function
 from tensorflow.python.data import Dataset
 
-from src.tfdatacompose.datasetoperation import DatasetOperation
+from tfdatacompose.datasetoperation import DatasetOperation
 
 
 class NumpyFilter(DatasetOperation):
@@ -17,9 +17,9 @@ class NumpyFilter(DatasetOperation):
 
     :param stateful: Whether the operation is stateless. Tensorflow can enable some optimizations on stateless functions to improve performance.
 
-    .. _Tensorflow Filter:https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
-    .. _numpy_function:https://www.tensorflow.org/api_docs/python/tf/numpy_function
-    .. _numpy ndarray:https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
+    .. _Tensorflow Filter: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
+    .. _numpy_function: https://www.tensorflow.org/api_docs/python/tf/numpy_function
+    .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
     """
 
     def __init__(self, stateful: bool = False) -> None:
@@ -49,5 +49,5 @@ class NumpyFilter(DatasetOperation):
         :param args: the dataset element as a `numpy ndarray`_
         :return: ``True`` to keep an element and ``False`` to remove it
 
-        .. _numpy ndarray:https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
+        .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
         """
