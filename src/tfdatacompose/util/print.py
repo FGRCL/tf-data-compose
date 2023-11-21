@@ -7,6 +7,15 @@ from tfdatacompose.map.map import Map
 
 
 class Print(Map):
+    """
+    Print tensor operation.
+
+    Prints the dataset element, then forwards the elements unchanged.
+    This operation is mainly used for debugging.
+
+    :param name: The name of the operation to display when printing, if None a number is displayed instead.
+    """
+
     number = 1
 
     def __init__(self, name: str | None = None):
