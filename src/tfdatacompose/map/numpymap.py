@@ -11,17 +11,17 @@ class NumpyMap(DatasetOperation):
     """
     Base class for mapping operations with `numpy ndarray`_ as inputs.
 
-    Wraps the `Tensorflow Map`_ operation on the dataset where the filter function is wrapped in `numpy_function`_..
+    Wraps the `Tensorflow Map`_ operation on the dataset where the filter function is wrapped in `numpy_function`_.
     The return type of the operation must be specified in advance for Tensorflow to build the computation graph.
     Transformations should be implemented in the ``map`` method.
     This operation is useful if your mapping can not be implemented in with Tensorflow operations, for instance, if it needs to call an external library.
 
-    .. _Tensorflow Map: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map
-    .. _numpy_function:https://www.tensorflow.org/api_docs/python/tf/numpy_function
-    .. _numpy ndarray:https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
-
     :param out_type: The return type of the operation
     :param stateful: Whether the operation is stateless. Tensorflow can enable some optimizations on stateless functions to improve performance.
+
+    .. _Tensorflow Map: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map
+    .. _numpy_function: https://www.tensorflow.org/api_docs/python/tf/numpy_function
+    .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
     """
 
     def __init__(
@@ -56,5 +56,5 @@ class NumpyMap(DatasetOperation):
         :param args: the dataset element as a `numpy ndarray`_
         :return: the transformed element as a list of `numpy ndarray`_
 
-        .. _numpy ndarray:https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
+        .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
         """

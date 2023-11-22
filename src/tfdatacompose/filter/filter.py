@@ -29,4 +29,3 @@ class Filter(DatasetOperation):
         :param args: the dataset element.
         :return: ``True`` to keep an element and ``False`` to remove it
         """
-        ...

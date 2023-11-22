@@ -15,8 +15,8 @@ class PythonFunctionFilter(DatasetOperation):
     This operation should be used when your filtering can not be implemented in with Tensorflow operations.
     For instance, if it needs to call an external library.
 
-    .. _Tensorflow Filter:https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
-    .. _py_function:https://www.tensorflow.org/api_docs/python/tf/py_function
+    .. _Tensorflow Filter: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
+    .. _py_function: https://www.tensorflow.org/api_docs/python/tf/py_function
     """
 
     def apply(self, dataset: Dataset) -> Dataset:
@@ -41,5 +41,5 @@ class PythonFunctionFilter(DatasetOperation):
         :param args: the dataset element as a `Tensor`_
         :return: ``True`` to keep an element and ``False`` to remove it
 
-        .. _Tensor:https://www.tensorflow.org/api_docs/python/tf/Tensor
+        .. _Tensor: https://www.tensorflow.org/api_docs/python/tf/Tensor
         """

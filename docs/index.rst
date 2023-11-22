@@ -1,14 +1,12 @@
-.. TF Data Compose documentation master file, created by
-sphinx-quickstart on Thu Sep 28 21:42:09 2023.
-You can adapt this file completely to your liking, but it should at least
-contain the root `toctree` directive.
-
-Welcome to TF Data Compose's documentation!
+TF Data Compose
 ===========================================
+Create composable data pipelines with TensorFlow.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 1
+    :caption: Contents:
+
+    apireference
 
 
 
@@ -19,7 +17,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-.. automodule:: tfdatacompose
 
-.. autoclass:: tfdatacompose.map.map.Map
-    :members:
+Using TF Data Compose you create composable data preprocessing pipelines of reusable preprocessing functions.
