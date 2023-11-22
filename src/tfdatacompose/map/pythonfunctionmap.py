@@ -17,7 +17,7 @@ class PythonFunctionMap(DatasetOperation):
     For example, if it needs to call an external library.
 
     .. _Tensorflow Map: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map
-    .. _py_function:https://www.tensorflow.org/api_docs/python/tf/py_function
+    .. _py_function: https://www.tensorflow.org/api_docs/python/tf/py_function
     """
 
     def __init__(self, out_type: Union[DType, Tuple[DType, ...]]):
@@ -50,5 +50,5 @@ class PythonFunctionMap(DatasetOperation):
         :param args: the dataset element as a `Tensor`_
         :return: the transformed element.
 
-        .. _Tensor:https://www.tensorflow.org/api_docs/python/tf/Tensor
+        .. _Tensor: https://www.tensorflow.org/api_docs/python/tf/Tensor
         """
