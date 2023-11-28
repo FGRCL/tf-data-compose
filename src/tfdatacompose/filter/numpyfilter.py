@@ -9,7 +9,7 @@ from tfdatacompose.datasetoperation import DatasetOperation
 
 class NumpyFilter(DatasetOperation):
     """
-    Base class for filtering operations with `numpy ndarray`_ as inputs.
+    Base class for filtering operations that require numpy arrays.
 
     Wraps the `Tensorflow Filter`_ operation on the dataset where the filter function is wrapped in `numpy_function`_.
     The filtering operation should be implemented in the ``filter`` method.
@@ -19,7 +19,6 @@ class NumpyFilter(DatasetOperation):
 
     .. _Tensorflow Filter: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#filter
     .. _numpy_function: https://www.tensorflow.org/api_docs/python/tf/numpy_function
-    .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
     """
 
     def __init__(self, stateful: bool = False) -> None:

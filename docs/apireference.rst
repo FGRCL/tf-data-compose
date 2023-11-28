@@ -8,13 +8,13 @@ API Reference
 
 Base classes
 ============
-These classes can be implemented to create your data operations.
+Base classes to create your data operations.
 
 Map
 ---
 .. autosummary::
-    :nosignatures:
     :toctree: generated/
+    :template: class.rst
 
     map.map.Map
     map.numpymap.NumpyMap
@@ -24,10 +24,9 @@ Map
 Filter
 ------
 .. autosummary::
-    :nosignatures:
     :toctree: generated/
+    :template: class.rst
 
-    pipeline.Pipeline
     filter.filter.Filter
     filter.numpyfilter.NumpyFilter
     filter.pythonfunctionfilter.PythonFunctionFilter
@@ -36,31 +35,31 @@ Filter
 Compose
 -------
 .. autosummary::
-    :nosignatures:
     :toctree: generated/
+    :template: class.rst
 
     pipeline.Pipeline
     datasetoperation.DatasetOperation
 
 Operations
-----------
-These operations are ready to be used.
+==========
+Ready to use operations.
 
 .. autosummary::
-    :nosignatures:
     :toctree: generated/
+    :template: class.rst
 
     batch.Batch
     skip.Skip
     take.Take
 
 Utilities
----------
-These operations can help you debug your pipelines.
+=========
+Operations to help debug with debugging pipelines.
 
 .. autosummary::
-    :nosignatures:
     :toctree: generated/
+    :template: class.rst
 
     util.print.Print
     util.printshape.PrintShape
