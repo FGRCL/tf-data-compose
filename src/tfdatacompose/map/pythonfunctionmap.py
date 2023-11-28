@@ -16,6 +16,8 @@ class PythonFunctionMap(DatasetOperation):
     This operation should be used when your mapping can not be implemented in with Tensorflow operations.
     For example, if it needs to call an external library.
 
+    :param out_type: The return type of the operation
+
     .. _Tensorflow Map: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map
     .. _py_function: https://www.tensorflow.org/api_docs/python/tf/py_function
     """
