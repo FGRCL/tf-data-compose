@@ -21,6 +21,17 @@ Map
     map.pythonfunctionmap.PythonFunctionMap
     flatmap.FlatMap
 
+Lambda Map
+----------
+.. autosummary::
+    :toctree: generated/
+    :template: class.rst
+
+    lambdamap.lambdamap.LambdaMap
+    lambdamap.numpylambdamap.NumpyLambdaMap
+    lambdamap.pythonfunctionlambdamap.PythonFunctionLambdaMap
+
+
 Filter
 ------
 .. autosummary::
