@@ -9,7 +9,7 @@ from tfdatacompose.datasetoperation import DatasetOperation
 
 class NumpyMap(DatasetOperation):
     """
-    Base class for mapping operations with `numpy ndarray`_ as inputs.
+    Base class for mapping operations that require numpy arrays.
 
     Wraps the `Tensorflow Map`_ operation on the dataset where the filter function is wrapped in `numpy_function`_.
     The return type of the operation must be specified in advance for Tensorflow to build the computation graph.
@@ -21,7 +21,6 @@ class NumpyMap(DatasetOperation):
 
     .. _Tensorflow Map: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map
     .. _numpy_function: https://www.tensorflow.org/api_docs/python/tf/numpy_function
-    .. _numpy ndarray: https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html
     """
 
     def __init__(

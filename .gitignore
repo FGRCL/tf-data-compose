@@ -157,5 +157,6 @@ cython_debug/
 .vscode/
 *.code-workspace
 
+docs/generated/
 
 TODO.md
