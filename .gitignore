@@ -160,3 +160,4 @@ cython_debug/
 docs/generated/
 
 TODO.md
+*.DS_Store

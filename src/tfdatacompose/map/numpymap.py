@@ -9,6 +9,7 @@ from tfdatacompose.datasetoperation import DatasetOperation
 
 class NumpyMap(DatasetOperation):
     """
+    .. _NumpyMap:
     Base class for mapping operations that require numpy arrays.
 
     Wraps the `Tensorflow Map`_ operation on the dataset where the filter function is wrapped in `numpy_function`_.

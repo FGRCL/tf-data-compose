@@ -14,8 +14,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 
 Using TF Data Compose you create composable data preprocessing pipelines of reusable preprocessing functions.

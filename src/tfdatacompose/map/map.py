@@ -9,6 +9,7 @@ from tfdatacompose.datasetoperation import DatasetOperation
 
 class Map(DatasetOperation):
     """
+    .. _Map:
     Base class for mapping operations.
 
     Wraps the `Tensorflow Map`_ operation on the dataset.

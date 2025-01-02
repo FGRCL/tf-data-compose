@@ -9,9 +9,11 @@ from tfdatacompose.datasetoperation import DatasetOperation
 
 class PythonFunctionMap(DatasetOperation):
     """
+    .. _PythonFunctionMap:
     Base class for mapping operations with arbitrary python code.
 
     Wraps the `Tensorflow Map`_ operation on the dataset where the filter function is wrapped in `py_function`_.
+    The return type of the operation must be specified in advance for Tensorflow to build the computation graph.
     The filtering operation should be implemented in the ``map`` method.
     This operation should be used when your mapping can not be implemented in with Tensorflow operations.
     For example, if it needs to call an external library.
