@@ -7,6 +7,7 @@ Create composable data pipelines with TensorFlow.
     :caption: Contents:
 
     apireference
+    demo
 
 
 
