@@ -25,7 +25,7 @@ jobs:
           coverage run -m pytest -r tests/
           coverage html -i
       - name: Upload coverage
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Coverage report
           path: htmlcov/
