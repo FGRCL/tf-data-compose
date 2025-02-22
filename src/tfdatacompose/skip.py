@@ -3,6 +3,9 @@ from tensorflow.python.data import Dataset
 from src.tfdatacompose.datasetoperation import DatasetOperation
 
 
+DatasetType = type(Dataset)
+
+
 class Skip(DatasetOperation):
     def __init__(self, count: int):
         self.count = count

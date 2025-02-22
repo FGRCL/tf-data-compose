@@ -1,4 +1,4 @@
-from numpy.core._multiarray_umath import arange
+from numpy import arange
 from tensorflow.python.data import Dataset
 
 from tfdatacompose.filter.pythonfunctionfilter import PythonFunctionFilter

@@ -11,5 +11,4 @@ class FlatMap(DatasetOperation):
         return dataset.flat_map(self.flatmap, name=self.__class__.__name__)
 
     @abstractmethod
-    def flatmap(self, *args: Tensor) -> Dataset:
-        ...
+    def flatmap(self, *args: Tensor) -> Dataset: ...

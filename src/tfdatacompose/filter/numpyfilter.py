@@ -1,5 +1,4 @@
 from abc import abstractmethod
-from typing import Any
 
 from tensorflow import Tensor, numpy_function
 from tensorflow.python.data import Dataset
@@ -26,5 +25,4 @@ class NumpyFilter(DatasetOperation):
         )
 
     @abstractmethod
-    def filter(self, *args) -> bool:
-        ...
+    def filter(self, *args) -> bool: ...

@@ -15,5 +15,4 @@ class Map(DatasetOperation):
         )
 
     @abstractmethod
-    def map(self, *args: Tensor) -> Tuple[Tensor, ...]:
-        ...
+    def map(self, *args: Tensor) -> Tuple[Tensor, ...]: ...

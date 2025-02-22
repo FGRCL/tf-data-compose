@@ -27,5 +27,4 @@ class PythonFunctionMap(DatasetOperation):
         )
 
     @abstractmethod
-    def map(self, *args) -> Any:
-        ...
+    def map(self, *args) -> Any: ...
