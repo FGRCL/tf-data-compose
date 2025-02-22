@@ -1,5 +1,4 @@
-from typing import Callable, Tuple
-
+from typing import Callable, Tuple, Union
 from tensorflow import Tensor
 from tensorflow.python.data import Dataset
 
@@ -19,8 +18,8 @@ class LambdaMap(DatasetOperation):
     :param map: lambda function implementing the transformation.
     """
 
-    def __init__(self, map: Callable[[Tensor, ...], Tuple[Tensor, ...]]):
+    def __init__(self, map: Callable[[...], Union[Tensor, Tuple[Tensor, ...]]]):
         self.map = map
 
     def apply(self, dataset: Dataset) -> Dataset:
-        return dataset.map(self.map_fn, name=(self.__class__.__name__,))
+        return dataset.map(self.map, name=(self.__class__.__name__,))

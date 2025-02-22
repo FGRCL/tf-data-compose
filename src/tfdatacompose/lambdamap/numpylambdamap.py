@@ -27,7 +27,7 @@ class NumpyLambdaMap(DatasetOperation):
     def __init__(
         self,
         out_type: Union[DType, Tuple[DType, ...]],
-        map: Callable[[Tensor, ...], Tuple[Tensor, ...]],
+        map: Callable[[...], Union[Tensor, Tuple[Tensor, ...]]],
         stateful: bool = False,
     ):
         self.out_type = out_type

@@ -12,6 +12,8 @@ Base classes to create your data operations.
 
 Map
 ---
+These operations will let you transform your data.
+
 .. autosummary::
     :toctree: generated/
     :template: class.rst
@@ -23,6 +25,8 @@ Map
 
 Lambda Map
 ----------
+Shorthand version of the mapping operations.
+
 .. autosummary::
     :toctree: generated/
     :template: class.rst
@@ -34,6 +38,8 @@ Lambda Map
 
 Filter
 ------
+These operations will let you filter your data.
+
 .. autosummary::
     :toctree: generated/
     :template: class.rst
@@ -45,6 +51,8 @@ Filter
 
 Compose
 -------
+These operations will help you compose your transoformations together to create your pipelines.
+
 .. autosummary::
     :toctree: generated/
     :template: class.rst

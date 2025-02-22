@@ -1,6 +1,7 @@
 TF Data Compose
 ===========================================
-Create composable data pipelines with TensorFlow.
+TF Data Compose allows you to create scikit-learn-like data preprocessing pipelines using tensorflow.
+Data preprocessing pipelines can be composed to highly reusable, configurable, and composable preprocessing functions.
 
 .. toctree::
     :maxdepth: 1
@@ -15,5 +16,3 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-
-Using TF Data Compose you create composable data preprocessing pipelines of reusable preprocessing functions.
