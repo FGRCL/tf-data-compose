@@ -1,5 +1,3 @@
-from typing import Tuple
-
 from numpy import arange
 from tensorflow import Tensor
 from tensorflow.python.data import Dataset
@@ -8,7 +6,7 @@ from tfdatacompose.flatmap import FlatMap
 
 
 class Double(FlatMap):
-    def flatmap(self, number: int) -> Tuple[Tensor, ...]:
+    def flatmap(self, number: Tensor) -> Dataset:
         return Dataset.from_tensor_slices(number * 2)
 
 

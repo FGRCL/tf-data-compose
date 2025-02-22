@@ -1,14 +1,12 @@
-from typing import Tuple
-
 from numpy import arange
-from tensorflow import Tensor, int64
+from tensorflow import int64
 from tensorflow.python.data import Dataset
 
 from tfdatacompose.map.numpymap import NumpyMap
 
 
 class Double(NumpyMap):
-    def map(self, number: int) -> Tuple[Tensor, ...]:
+    def map(self, number: int) -> int:
         return number * 2
 
 

@@ -1,7 +1,4 @@
-from typing import Tuple
-
 from numpy import arange
-from tensorflow import Tensor
 from tensorflow.python.data import Dataset
 
 from tfdatacompose.filter.filter import Filter
@@ -10,7 +7,7 @@ from tfdatacompose.pipepline import Pipeline
 
 
 class Double(Map):
-    def map(self, number: int) -> Tuple[Tensor, ...]:
+    def map(self, number: int) -> int:
         return number * 2
 
 

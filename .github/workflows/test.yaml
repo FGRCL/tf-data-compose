@@ -7,8 +7,6 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-      # You can use PyPy versions in python-version.
-      # For example, pypy2.7 and pypy3.9
       matrix:
         python-version: [ "3.10" ]
     steps:
@@ -27,7 +25,7 @@ jobs:
           coverage run -m pytest -r tests/
           coverage html -i
       - name: Upload coverage
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Coverage report
           path: htmlcov/

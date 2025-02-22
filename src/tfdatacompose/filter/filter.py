@@ -10,5 +10,4 @@ class Filter(DatasetOperation):
         return dataset.filter(self.filter, name=self.__class__.__name__)
 
     @abstractmethod
-    def filter(self, *args) -> bool:
-        ...
+    def filter(self, *args) -> bool: ...
