@@ -2,7 +2,7 @@ from numpy.core._multiarray_umath import arange
 from tensorflow import int64
 from tensorflow.python.data import Dataset
 
-from tfdatacompose.lambdamap.numylambdamap import NumpyLambdaMap
+from tfdatacompose.lambdamap.numpylambdamap import NumpyLambdaMap
 
 
 class TestNumpyLambdaMap:

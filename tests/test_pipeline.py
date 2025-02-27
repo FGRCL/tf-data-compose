@@ -3,7 +3,7 @@ from tensorflow.python.data import Dataset
 
 from tfdatacompose.filter.filter import Filter
 from tfdatacompose.map.map import Map
-from tfdatacompose.pipepline import Pipeline
+from tfdatacompose.pipeline import Pipeline
 
 
 class Double(Map):
