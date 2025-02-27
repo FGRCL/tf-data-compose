@@ -21,13 +21,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: set up python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: pdm-project/setup-pdm@v4
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
+          cache: true
       - name: install dependencies
         run: |
-          pip install --user pdm
           pdm install --global --project .
       - name: publish
         run: |
