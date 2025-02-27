@@ -1,0 +1,25 @@
+name: Publish to test Pypi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-test:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.10" ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          pdm --global --project .
+          pdm publish --repository https://test.pypi.org/legacy/
