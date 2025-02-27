@@ -1,4 +1,4 @@
-from tensorflow.python.data import AUTOTUNE, Dataset
+from tensorflow.python.data import Dataset
 
 from tfdatacompose.datasetoperation import DatasetOperation
 
