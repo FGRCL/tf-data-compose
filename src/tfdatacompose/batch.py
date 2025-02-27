@@ -1,4 +1,4 @@
-from tensorflow.python.data import AUTOTUNE, Dataset
+from tensorflow.python.data import Dataset
 
 from tfdatacompose.datasetoperation import DatasetOperation
 
@@ -24,7 +24,5 @@ class Batch(DatasetOperation):
         return dataset.batch(
             self.batch_size,
             self.drop_remainder,
-            num_parallel_calls=AUTOTUNE,
-            deterministic=False,
             name=self.__class__.__name__,
         )
