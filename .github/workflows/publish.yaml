@@ -22,6 +22,7 @@ jobs:
       - name: install dependencies
         run: |
           pip install --user pdm
+          pdm install --global --project .
       - name: publish
         run: |
           pdm publish
