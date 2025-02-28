@@ -4,7 +4,6 @@ on:
   workflow_run:
     workflows: 
       - "Unit tests"
-      - "CodeQL"
     branches: 
       - main
     types: 
@@ -52,6 +51,7 @@ jobs:
       - name: install dependencies
         run: |
           pdm install --global --project .
+          sudo apt install pandoc
       - name: build docs
         run: |
           pdm run docs
