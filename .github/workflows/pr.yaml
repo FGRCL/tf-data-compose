@@ -1,9 +1,12 @@
 name: Pull Request Checks
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - reopened
     branches:
-      - !main
+      - main
 
 jobs:
   code-quality:
