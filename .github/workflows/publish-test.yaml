@@ -6,7 +6,6 @@ on:
 jobs:
   publish-package:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     strategy:
       matrix:
         python-version: [ "3.10" ]
@@ -29,7 +28,6 @@ jobs:
 
   publish-docs:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     strategy:
       matrix:
         python-version: [ "3.10" ]
