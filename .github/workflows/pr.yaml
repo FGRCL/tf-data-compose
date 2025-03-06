@@ -1,0 +1,11 @@
+name: Pull Request Checks
+
+on: [ push ]
+
+jobs:
+  code-quality:
+    name: Check code quality
+    uses: ./.github/workflows/codeql.yaml
+  test:
+    name: Run tests
+    uses: ./.github/workflows/test.yaml
