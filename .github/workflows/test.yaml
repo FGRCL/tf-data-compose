@@ -5,7 +5,6 @@ on:
 
 jobs:
   unit-test:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
