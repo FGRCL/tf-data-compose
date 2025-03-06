@@ -10,6 +10,7 @@ jobs:
       matrix:
         python-version: [ "3.10" ]
     permissions:
+      contents: read
       id-token: write
     steps:
       - uses: actions/checkout@v4
@@ -23,7 +24,7 @@ jobs:
           pdm install --global --project .
       - name: publish
         run: |
-          pdm publish --repository https://test.pypi.org/legacy/
+          pdm publish --repository testpypi
 
 
   publish-docs:

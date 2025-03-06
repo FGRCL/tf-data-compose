@@ -17,6 +17,7 @@ jobs:
   publish:
     name: Publish staging release
     permissions:
+      contents: read
       id-token: write
       pages: write
     uses: ./.github/workflows/publish-test.yaml
