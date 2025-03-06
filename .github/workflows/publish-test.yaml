@@ -24,7 +24,7 @@ jobs:
           pdm install --global --project .
       - name: publish
         run: |
-          pdm publish --repository testpypi
+          pdm publish --repository https://test.pypi.org/legacy/ -vv
 
 
   publish-docs:
