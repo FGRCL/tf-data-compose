@@ -14,5 +14,8 @@ jobs:
     uses: ./.github/workflows/test.yaml
   publish:
     name: Publish staging release
+    permissions:
+      id-token: write
+      pages: write
     uses: ./.github/workflows/publish-test.yaml
     needs: [code-quality, test]
