@@ -8,11 +8,11 @@ on:
 jobs:
   code-quality:
     name: Check code quality
-    uses: ./.github/workflows/callable/codeql.yaml
+    uses: ./.github/workflows/codeql.yaml
   test:
     name: Run tests
-    uses: ./.github/workflows/callable/test.yaml
+    uses: ./.github/workflows/test.yaml
   publish:
     name: Publish staging release
-    uses: ./.github/workflows/callable/publish-test.yaml
+    uses: ./.github/workflows/publish-test.yaml
     needs: [code-quality, test]

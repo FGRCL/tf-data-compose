@@ -8,4 +8,4 @@ on:
 jobs:
   publish:
     name: Publish release
-    uses: ./.github/workflows/callable/publish.yaml
+    uses: ./.github/workflows/publish.yaml
