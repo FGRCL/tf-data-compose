@@ -19,6 +19,5 @@ jobs:
     permissions:
       contents: read
       id-token: write
-      pages: write
     uses: ./.github/workflows/publish-test.yaml
     needs: [code-quality, test]
