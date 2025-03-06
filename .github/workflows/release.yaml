@@ -8,4 +8,6 @@ on:
 jobs:
   publish:
     name: Publish release
+    permissions:
+      id-token: write
     uses: ./.github/workflows/publish.yaml
