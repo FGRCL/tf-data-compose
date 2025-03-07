@@ -1,7 +1,8 @@
 - define the input and output types better
-- replace .apply() with __call__()?
 - find a way to organize base operations
 - find a way to split and merge pipelines (Graph API)
 - implement all tensorflow.data operations
 - ?implement sci-kit learn transformations
 - Pipeline option builder
+- Add a longer data processing example
+- Add something else
