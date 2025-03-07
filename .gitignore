@@ -161,3 +161,5 @@ docs/generated/
 
 TODO.md
 *.DS_Store
+
+.vale.ini
