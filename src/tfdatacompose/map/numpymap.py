@@ -5,6 +5,7 @@ from tensorflow import DType, Tensor, numpy_function
 from tensorflow.python.data import Dataset
 
 from tfdatacompose.datasetoperation import DatasetOperation
+from numpy import ndarray
 
 
 class NumpyMap(DatasetOperation):
@@ -47,7 +48,7 @@ class NumpyMap(DatasetOperation):
         )
 
     @abstractmethod
-    def map(self, *args: Tensor) -> Tuple[Tensor]:
+    def map(self, *args: ndarray) -> Tuple[ndarray]:
         """
         Implement your transformation in this method.
         The method receives a dataset element as input transformed into a `numpy ndarray`_ and should return a list of `numpy ndarray`_ .
