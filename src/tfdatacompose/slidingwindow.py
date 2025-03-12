@@ -5,6 +5,19 @@ import tensorflow
 
 
 class SlidingWindow(Map):
+    """
+    .. _Map:
+    Sliding Window transformation.
+
+    Creates a tensor of sliding windows from the input tensors.
+    Each tensors will be split into windows of size `width` moving by `shift` places for each window.
+    For example the tensor `[1 2 3 4 5]` with `width=3` and `shift=1` would yield `[[1 2 3] [2 3 4] [3 4 5]]`.
+    The sliding windows is applied too all the inputs tensors in the same fashion.
+
+    :param width: The length of the sliding windows.
+    :param shift: The numbers steps to take between each sliding windows.
+    """
+
     def __init__(self, width: int, shift: int):
         self.width = width
         self.shift = shift

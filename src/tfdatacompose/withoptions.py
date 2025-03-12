@@ -3,6 +3,7 @@ from tensorflow import Options, Dataset
 
 
 class WithOptions(DatasetOperation):
+
     def __init__(self, options: Options):
         self.options = options
 

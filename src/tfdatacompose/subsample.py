@@ -6,8 +6,18 @@ from numpy.random import default_rng
 
 
 class Subsample(NumpyMap):
+    """
+    Tensor subsamling transformation.
+
+    Takes a random subsample from the input tensors by the given `sample_rate`.
+    All input tensors are randomdly sampled with the same sample rate.
+
+    :param sample_rate: The sampling rate of the input tensor's elements. between `0.0` and `1.0`.
+    :param seed: random seed for picking the random samples.
+    """
+
     def __init__(
-        self, out_type: Union[DType, Tuple[DType, ...]], seed: int, sample_rate: float
+        self, out_type: Union[DType, Tuple[DType, ...]], sample_rate: float, seed: int
     ):
         super().__init__(out_type)
         self.random_generator = default_rng(seed)
