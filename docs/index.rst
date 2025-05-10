@@ -9,6 +9,7 @@ Data preprocessing pipelines can be composed to highly reusable, configurable, a
 
     apireference
     demo
+    hook
 
 
 

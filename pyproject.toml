@@ -52,5 +52,6 @@ dev = [
     "jupyter>=1.1.1",
     "nbsphinx>=0.9.6",
     "tensorflow-datasets>=4.9.2",
+    "pandas>=2.0.3",
 ]
 
